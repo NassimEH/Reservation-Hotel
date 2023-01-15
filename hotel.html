@@ -1,0 +1,85 @@
+<!-- El Haddad Nassim -->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="https://www.freeiconspng.com/uploads/hotel-bed-icon-png-7.png">
+  <title> Hôtel en France </title>
+  <link rel="stylesheet" type="text/css" href="styleHotel.css" media="all">
+  <script src="scriptHotel.js"></script>
+</head>
+
+<body onload="reset()">
+  <form method="POST" action="#" id="form" onsubmit="return false;">
+
+    <h1> HÔTEL EN FRANCE </h1>
+    <p>Indiquez vos dates de réservation<br>Toute annulation doit se faire 48h avant</p>
+
+    <table id="t">
+      <tr>
+        <td colspan="2"><img src="https://www.freeiconspng.com/uploads/hotel-bed-icon-png-7.png" id="hotel"
+            alt="Logo hôtel"></td>
+        <td colspan="2" id="France">France</td>
+      </tr>
+
+      <tr>
+        <td colspan="2"> <input id="datedeb" name="DateDebut" type="date" class="dates"> </td>
+        <td colspan="2"> <input id="datefin" name="DateFin" type="date" class="dates"> </td>
+      </tr>
+
+      <tr>
+        <td colspan="2"> Adultes
+          <input type="text" name="adultes" id="adultes" class="nb">
+        </td>
+
+        <td><input class="logo" type="image" src="https://www.freeiconspng.com/uploads/blue-plus-icon-6.png" alt="+"
+            onclick='plus("adultes")'></td>
+
+        <td><input class="logo" type="image" src="https://www.icone-png.com/png/16/16313.png" alt="+"
+            onclick='moins("adultes")'>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2"> Enfants
+          <input type="text" name="enfants" id="enfants" class="nb">
+        </td>
+
+        <td><input class="logo" type="image" src="https://www.freeiconspng.com/uploads/blue-plus-icon-6.png" alt="+"
+            onclick='plus("enfants")'></td>
+
+        <td><input class="logo" type="image" src="https://www.icone-png.com/png/16/16313.png" alt="+"
+            onclick='moins("enfants")'>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2"> Chambres
+          <input type="text" name="chambres" id="chambres" class="nb">
+        </td>
+
+        <td><input class="logo" type="image" src="https://www.freeiconspng.com/uploads/blue-plus-icon-6.png" alt="+"
+            onclick='plus("chambres")'></td>
+
+        <td><input class="logo" type="image" src="https://www.icone-png.com/png/16/16313.png" alt="+"
+            onclick='moins("chambres")'>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="4">
+          <input type="button" name="rechercher" value="Rechercher" id="rechercher" onclick="verif()">
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="4"> <input name="voyage" id="voyage" type="checkbox"> Je voyage pour le travail </td>
+      </tr>
+
+    </table>
+  </form>
+</body>
+
+</html>
